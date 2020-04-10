@@ -1,0 +1,851 @@
+<!-- main-layout--><!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8"/>
+      <html xmlns="http://www.w3.org/1999/xhtml">
+   </html>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css"/>
+   <link rel="stylesheet" type="text/css" href="js/menuleft/libs.min.css"/>
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+   <title>Главная</title>
+   </head>
+   <body>
+      <header id="header">
+         <div class="header">
+            <a class="logo" id="logo" href="/">
+               <div class="logo_icon"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+               <div class="logo_text">
+                  <div class="logo_text-top"><img src="img/logo-name.svg" alt="logo" title="logo"/></div>
+                  <div class="logo_text-bottom">Учебный центр</div>
+               </div>
+            </a>
+            <div class="nav nav_desktop">
+               <ul>
+                  <li class="nav_block"><a class="nav_link" href="#">Расписание</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Дистанционное обучение</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Преподаватели</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Блог</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Скидки</a></li>
+                  <li class="nav_block nav_submenu">
+                     <div class="nav_link">Учебный центр<i class="icon-triangle"></i></div>
+                     <div class="submenu">
+                        <ul>
+                           <li><a class="submenu_link" href="#">Текст 1</a></li>
+                           <li><a class="submenu_link" href="#">Текст 2</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav_block"><a class="nav_link" href="#">Магазин</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Контакты</a></li>
+               </ul>
+            </div>
+            <div class="language-bar nav_desktop">
+               <button>En</button><!-- button Ru-->
+            </div>
+            <div class="nav_mobile">
+               <a class="phone_btn" data-fancybox="" data-src="#callorder" href="javascript:;">
+                  <svg width="33px" height="44px" viewBox="0 0 33 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                     <g id="320-и-680" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="4-страница-курса" transform="translate(-250.000000, -21.000000)" fill="#8B572A" fill-rule="nonzero">
+                           <path d="M269.448646,49.4374896 C272.038778,47.2895749 275.932692,47.722232 278.0127,50.3695191 L281.921843,55.3295065 C283.868191,57.8318863 283.103595,61.497447 280.338719,62.9487842 C271.515142,67.7403956 262.412272,63.9914345 254.804139,50.0431892 C247.187644,36.079615 248.942352,26.3857707 257.773985,21.5900088 C260.539919,20.1378938 263.973608,21.4670638 265.000685,24.4115172 L267.116257,30.3364653 C268.180475,33.529118 266.477934,36.9728941 263.287285,38.0364438 L261.712049,38.5611545 C263.017747,42.9818775 265.188673,47.0040546 268.162668,50.5045771 L269.448646,49.4374896 Z M274.869276,52.8431555 C274.172883,51.9568372 272.853661,51.8102569 272.002462,52.5161289 L269.999119,54.178061 C268.782124,55.1516573 266.962483,55.0446196 265.864333,53.9464694 L265.790449,53.8685066 C261.889945,49.5247635 259.126388,44.4133055 257.595547,38.6904858 C257.236795,37.1358953 258.105055,35.5079079 259.626448,35.0403526 L262.022374,34.2417106 C263.109559,33.8793157 263.689689,32.7058705 263.335407,31.6415936 L261.228801,25.7429344 C261.005796,25.1036539 260.246444,24.809711 259.658094,25.118372 C252.984052,28.7426859 251.677907,35.9584547 258.315721,48.1277807 C264.945163,60.281757 271.725729,63.0742916 278.454611,59.420421 C279.02371,59.1216438 279.188863,58.3356273 278.775301,57.7991905 L274.869276,52.8431555 Z" id="Shape"></path>
+                        </g>
+                     </g>
+                  </svg>
+               </a>
+               <a class="btn btn-primary" data-fancybox="" data-src="#navTopMobile" href="javascript:;">
+                  <svg class="icon-burger catalog-line--left__svg" xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27">
+                     <path fill="#8B572A" fill-rule="nonzero" d="M37.5 22.5v4H.5v-4h37zm0-11v4H.5v-4h37zm0-11v4H.5v-4h37z"></path>
+                  </svg>
+               </a>
+            </div>
+            <div id="navTopMobile" style="display: none;">
+               <div class="nav nav_modal">
+                  <button class="nav_close fancybox-close-small" data-fancybox-close="" title="Close">
+                     <svg class="icon-form-close" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                        <path fill="#8B572A" fill-rule="nonzero" d="M17.33 14.5L29 26.17 26.17 29 14.5 17.33 2.83 29 0 26.17 11.67 14.5 0 2.83 2.83 0 14.5 11.67 26.17 0 29 2.83 17.33 14.5z"></path>
+                     </svg>
+                  </button>
+                  <a class="logo" href="/">
+                     <div class="logo_img"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+                     <div class="logo_text">
+                        <div class="logo_text-top"><img src="img/logo-name.svg" alt="logo" title="logo"/></div>
+                        <div class="logo_text-bottom">Учебный центр</div>
+                     </div>
+                  </a>
+                  <div class="mobile-menu_nav" id="cssmenu">
+                     <ul>
+                        <li class="nav_block active"><a class="nav_link" href="#">Расписание</a></li>
+                        <li class="nav_block has-sub"><a class="nav_link" href="#">Дистанционное обучение</a></li>
+                        <li class="nav_block has-sub"><a class="nav_link" href="#">Преподаватели</a></li>
+                        <li class="nav_block has-sub"><a class="nav_link" href="#">Блог</a></li>
+                        <li class="nav_block has-sub"><a class="nav_link" href="#">Скидки</a></li>
+                        <li class="nav_block has-sub">
+                           <a class="nav_link" href="#">Учебный центр<i class="icon-triangle"></i></a>
+                           <ul class="subnav">
+                              <li class="nav_block"><a class="nav_link" href="#">тест 1</a></li>
+                              <li class="nav_block"><a class="nav_link" href="#">тест 2</a></li>
+                           </ul>
+                        </li>
+                        <li class="nav_block has-sub"><a class="nav_link" href="#">Магазин</a></li>
+                        <li class="nav_block has-sub"><a class="nav_link" href="#">Контакты</a></li>
+                        <li class="nav_block">
+                           <div class="contact_wrapper">
+                              <div class="phone_wrapper">
+                                 <div class="phone_main"><a class="phone_link" href="tel:+73912343440">+7 (333) 333-33-33</a></div>
+                                 <div class="phone_second"><a class="phone_link" href="tel:+73912343443">333-33-33</a><a class="phone_link" href="tel:+73912343444">333-33-33</a></div>
+                                 <a class="link_btn phone_btn">Заказать звонок</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="nav_block">
+                           <div class="address_wrapper">
+                              <div class="address">ул. Пушкина, 49</div>
+                              <div class="address">ул. Карла Маркса, 75</div>
+                              <div class="address_location">
+                                 <div class="location"><i class="icon-location"></i><span>Москва</span></div>
+                                 <a class="link_btn link" href="#">На карте</a>
+                              </div>
+                           </div>
+                        </li>
+                        <li class="nav_block">
+                           <div class="info-organization"><a href="#">Сведения об образовательной организации</a></div>
+                        </li>
+                        <li class="nav_block last">
+                           <div class="language-bar">
+                              <button>En</button><!-- button Ru-->
+                           </div>
+                        </li>
+                        <div class="image-branch image-branch_3"></div>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="top-menu-mobile">
+            <div class="top-menu-mobile_buttons">
+               <a class="top-menu-mobile_button top-menu-mobile_button_left" data-fancybox="" data-fancybox-close="#top-menu-mobile_right" data-src="#top-menu-mobile_left" href="javascript:;">Обучение</a>
+               <div class="top-menu-mobile_catalog-modal" id="top-menu-mobile_left" style="display: none;">
+                  <div class="top-menu-mobile_header">
+                     <button class="nav_close fancybox-close-small" data-fancybox-close="" title="Close">
+                        <svg class="icon-form-close" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                           <path fill="#8B572A" fill-rule="nonzero" d="M17.33 14.5L29 26.17 26.17 29 14.5 17.33 2.83 29 0 26.17 11.67 14.5 0 2.83 2.83 0 14.5 11.67 26.17 0 29 2.83 17.33 14.5z"></path>
+                        </svg>
+                     </button>
+                     <a class="logo" href="/">
+                        <div class="logo_img"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+                        <div class="logo_text">
+                           <div class="logo_text-top"><img src="img/logo-name.svg" alt="logo" title="logo"/></div>
+                           <div class="logo_text-bottom">Учебный центр</div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="top-menu-mobile_buttons">
+                     <div class="top-menu-mobile_buttons"><a class="top-menu-mobile_button top-menu-mobile_button_left" data-fancybox-close="#top-menu-mobile_right" title="Close">Обучение</a><a class="top-menu-mobile_button top-menu-mobile_button_right" data-fancybox="" data-fancybox-close="#top-menu-mobile_left" data-src="#top-menu-mobile_right" href="javascript:;">Подбор программы</a></div>
+                  </div>
+                  <div class="top-menu-mobile_content modal-catalog__item">
+                     <div class="modal-catalog__head"><a class="modal-catalog__title" href="#"><span>Косметология</span></a><a class="modal-catalog__subtitle" href="#"><span>Базовые курсы</span></a></div>
+                     <div class="modal-catalog__subheadings"><a href="#">Экспресс курс</a><a href="#">Углубленный курс</a><a href="#">Аппаратная косметология</a></div>
+                     <div class="modal-catalog__head"><a class="modal-catalog__subtitle" href="#"><span>Повышение квалификации</span></a></div>
+                     <div class="modal-catalog__subheadings"><a href="#">Наращивание ресниц</a><a href="#">Голливудский объем ресниц</a><a href="#">Гигиеническая чистка лица</a><a href="#">Восковая депиляция и шугаринг</a><a href="#">Классический пилинг</a><a href="#">Химический пилинг</a><a href="#">Аппаратная косметология (2 аппарата)</a><a href="#">Аппаратная косметология (1 аппарат)</a><a href="#">Индивидуальные консультации для работающих косметологов</a></div>
+                     <div class="modal-catalog__item">
+                        <div class="modal-catalog__head"><a class="modal-catalog__title" href="#"><span>Массаж</span></a><a class="modal-catalog__subtitle" href="#"><span>Базовые курсы</span></a></div>
+                        <div class="modal-catalog__subheadings"><a href="#">Массажист-PRO</a><a href="#">Массажист-ELITE</a></div>
+                        <div class="modal-catalog__head"><a class="modal-catalog__subtitle" href="#"><span>Повышение квалификации</span></a></div>
+                        <div class="modal-catalog__subheadings"><a href="#">Кинезиотейпирование</a><a href="#">Мезодемальные техники головы, лица, шеи и верхних конечностей</a><a href="#">Мезотерапия по телу</a><a href="#">Женский массаж</a><a href="#">Висцеральный массаж</a><a href="#">Миофасциральный релиз на диафрагмах</a><a href="#">Параостеопатические техники</a><a href="#">Миопластический массаж</a><a href="#">Коммерческий массаж</a><a href="#">Коррекция фигуры</a><a href="#">Мягкие мануальные техники</a><a href="#">Су-джок</a></div>
+                        <div class="modal-catalog__head"><a class="modal-catalog__subtitle" href="#"><span>Курсы детского массажа</span></a></div>
+                        <div class="modal-catalog__subheadings"><a href="#">Детский массаж</a><a href="#">Грудничковый (от 0 до года)</a><a href="#">Логопедический массаж</a><a href="#">Массаж при нарушениях опорно-двигательного аппарата и ДЦП</a></div>
+                     </div>
+                     <div class="modal-catalog__item">
+                        <div class="modal-catalog__head"><a class="modal-catalog__title" href="#"><span>Маникюр и педикюр</span></a></div>
+                        <div class="modal-catalog__subheadings"><a href="#">Профессиональный маникюр</a><a href="#">Педикюр классический и аппаратный</a><a href="#">Укрепление ногтей био-гелем</a><a href="#">Работа с гель-лаком</a></div>
+                     </div>
+                  </div>
+               </div>
+               <a class="top-menu-mobile_button top-menu-mobile_button_right" data-fancybox="" data-fancybox-close="#top-menu-mobile_left" data-src="#top-menu-mobile_right" href="javascript:;">Подбор программы</a>
+               <div id="top-menu-mobile_right" style="display: none;">
+                  <div class="catalog-double__right">
+                     <div class="search-modal">
+                        <div class="top-menu-mobile_header">
+                           <button class="nav_close fancybox-close-small" data-fancybox-close="" title="Close">
+                              <svg class="icon-form-close" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                                 <path fill="#8B572A" fill-rule="nonzero" d="M17.33 14.5L29 26.17 26.17 29 14.5 17.33 2.83 29 0 26.17 11.67 14.5 0 2.83 2.83 0 14.5 11.67 26.17 0 29 2.83 17.33 14.5z"></path>
+                              </svg>
+                           </button>
+                           <a class="logo" href="/">
+                              <div class="logo_img"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+                              <div class="logo_text">
+                                 <div class="logo_text-top"><img src="img/logo-name.svg" alt="logo" title="logo"/></div>
+                                 <div class="logo_text-bottom">Учебный центр</div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="top-menu-mobile_buttons"><a class="top-menu-mobile_button top-menu-mobile_button_left" data-fancybox="" data-src="#top-menu-mobile_left" href="javascript:;">Обучение</a><a class="top-menu-mobile_button top-menu-mobile_button_right" data-fancybox-close="" title="Close">Подбор программы</a></div>
+                        <div class="search-modal__item">
+                           <h3>Подбор программы</h3>
+                           <p>Оставьте контактные данные, и наши специалисты подберут для вас наиболее выгодный вариант обучения.</p>
+                           <form data-parsley-validate="" novalidate="">
+                              <label class="txt-input"><span class="txt-input__wrap"><input class="txt-input__field" type="text"/><span class="placeholder">Имя*</span><a class="input-clear" href="#"></a></span></label><label class="txt-input"><span class="txt-input__wrap"><input class="txt-input__field phone" type="text" id="phone" data-parsley-required="true" data-parsley-required-message="Введите номер телефона" data-parsley-trigger="change"/><span class="placeholder">Телефон*</span><a class="input-clear" href="#"></a></span></label><a class="button_green button_green_2" href="#">Заказать подбор</a>
+                              <div class="txt-input__checkbox"><label class="cb-input cb-input__inverse"><input class="cb-input__checkbox" type="checkbox" data-parsley-checkmin="1" required="" checked="" name="ch-o" data-parsley-required-message="" data-parsley-multiple="ch-o"/><span class="cb-input__check"></span><span class="cb-input__label">Я даю свое
+                                 <a data-fancybox="" data-src="#policy" href="javascript:;">согласие на обработку персональных данных</a></span></label>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="catalog-modal" id="catalog-modal">
+         <div class="header">
+            <div class="logo_icon"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+            <a class="logo" href="/">
+               <div class="logo_text">
+                  <div class="logo_text-top"><img src="img/logo-name.svg" alt="logo" title="logo"/></div>
+                  <div class="logo_text-bottom">Учебный центр</div>
+               </div>
+            </a>
+            <div class="nav nav_desktop">
+               <ul>
+                  <li class="nav_block"><a class="nav_link" href="#">Расписание</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Дистанционное обучение</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Преподаватели</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Блог</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Скидки</a></li>
+                  <li class="nav_block nav_submenu">
+                     <div class="nav_link">Учебный центр<i class="icon-triangle"></i></div>
+                     <div class="submenu">
+                        <ul>
+                           <li><a class="submenu_link" href="#">Текст 1</a></li>
+                           <li><a class="submenu_link" href="#">Текст 2</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav_block"><a class="nav_link" href="#">Магазин</a></li>
+                  <li class="nav_block"><a class="nav_link" href="#">Контакты</a></li>
+               </ul>
+            </div>
+            <div class="language-bar nav_desktop"><button>En</button></div>
+         </div>
+         <a class="form_close form_close__left form_close--catalog" data-fancybox-close="" title="Close">
+            <div class="catalog-line--left__wrapper catalog-line--left__wrapper__1"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+            <div class="catalog-line--left__wrapper catalog-line--left__wrapper__2"><span class="catalog-line--left__text catalog-line--left__text__white">Обучение</span></div>
+            <div class="catalog-line--left__wrapper catalog-line--left__wrapper__3"><span class="catalog-line--left__text catalog-line--left__text__grey">Подбор программы</span></div>
+            <div class="catalog-line--left__wrapper catalog-line--left__wrapper__4">
+               <div class="fancybox-close-small" data-fancybox-close="" title="Close">
+                  <svg class="icon-form-close" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                     <path fill="#8B572A" fill-rule="nonzero" d="M17.33 14.5L29 26.17 26.17 29 14.5 17.33 2.83 29 0 26.17 11.67 14.5 0 2.83 2.83 0 14.5 11.67 26.17 0 29 2.83 17.33 14.5z"></path>
+                  </svg>
+               </div>
+            </div>
+            <div class="catalog-line--left__wrapper catalog-line--left__wrapper__5">
+               <div class="catalog-line--left__icon catalog-line--left__icon__vk">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15">
+                     <path fill="#BDBDBD" fill-rule="nonzero" d="M25.94.659h-4.38c-.365 0-.7.196-.872.51 0 0-1.748 3.152-2.31 4.213-1.51 2.855-2.487 1.959-2.487.634v-4.57c0-.794-.658-1.439-1.47-1.439h-3.295a2.661 2.661 0 0 0-2.331 1.06s1.673-.265 1.673 1.941c0 .548.028 2.122.055 3.442a.95.95 0 0 1-.614.908.985.985 0 0 1-1.081-.25A27.912 27.912 0 0 1 5.5 1.184a.924.924 0 0 0-.84-.525H.682a.68.68 0 0 0-.559.282.65.65 0 0 0-.08.61C1.252 4.799 6.458 15 12.402 15h2.5a.978.978 0 0 0 .989-.968v-1.479c0-.379.23-.722.585-.872a.987.987 0 0 1 1.051.18l2.994 2.754c.269.247.624.385.993.385h3.932c1.896 0 1.896-1.288.862-2.285-.727-.702-3.353-3.412-3.353-3.412a1.307 1.307 0 0 1-.104-1.725 1257.08 1257.08 0 0 0 2.825-3.65c.805-1.049 2.261-3.269.265-3.269z"></path>
+                  </svg>
+               </div>
+               <div class="catalog-line--left__icon catalog-line--left__icon__inst">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                     <path fill="#BDBDBD" fill-rule="nonzero" d="M15.582 0H6.416A6.424 6.424 0 0 0 0 6.418v9.166A6.424 6.424 0 0 0 6.418 22h9.166A6.424 6.424 0 0 0 22 15.582V6.416A6.424 6.424 0 0 0 15.582 0zM11 16.5A5.506 5.506 0 0 1 5.5 11c0-3.033 2.467-5.5 5.5-5.5s5.5 2.467 5.5 5.5-2.467 5.5-5.5 5.5zm6.417-11a.917.917 0 1 1 0-1.834.917.917 0 0 1 0 1.834zM11 14.667a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334z"></path>
+                  </svg>
+               </div>
+            </div>
+         </a>
+         <div class="form_close form_close__right" id="formCloseRight">
+            <a class="form_close--catalog fancybox-close-small" data-fancybox-close="" title="Close">
+               <svg class="icon-form-close" xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29">
+                  <path fill="#8B572A" fill-rule="nonzero" d="M17.33 14.5L29 26.17 26.17 29 14.5 17.33 2.83 29 0 26.17 11.67 14.5 0 2.83 2.83 0 14.5 11.67 26.17 0 29 2.83 17.33 14.5z"></path>
+               </svg>
+            </a>
+         </div>
+         <div class="fancy">
+            <div class="fancy-inner">
+               <div class="catalog-double content custom-scroll--container">
+                  <div class="catalog-double__left">
+                     <div class="catalog-double__list">
+                        <div class="modal-catalog" data-simplebar="init">
+                           <div class="simplebar-track vertical" style="visibility: hidden;">
+                              <div class="simplebar-scrollbar"></div>
+                           </div>
+                           <div class="simplebar-track horizontal" style="visibility: hidden;">
+                              <div class="simplebar-scrollbar"></div>
+                           </div>
+                           <div class="simplebar-scroll-content" style="padding-right: 17px; margin-bottom: -34px;">
+                              <div class="simplebar-content" style="padding-bottom: 17px">
+                                 <div class="modal-catalog__item">
+                                    <div class="modal-catalog__head"><a class="modal-catalog__title" href="#"><span>Косметология</span></a><a class="modal-catalog__subtitle" href="#"><span>Базовые курсы</span></a></div>
+                                    <div class="modal-catalog__subheadings"><a href="#">Экспресс курс</a><a href="#">Углубленный курс</a><a href="#">Аппаратная косметология</a></div>
+                                    <div class="modal-catalog__head"><a class="modal-catalog__subtitle" href="#"><span>Повышение квалификации</span></a></div>
+                                    <div class="modal-catalog__subheadings"><a href="#">Наращивание ресниц</a><a href="#">Голливудский объем ресниц</a><a href="#">Гигиеническая чистка лица</a><a href="#">Восковая депиляция и шугаринг</a><a href="#">Классический пилинг</a><a href="#">Химический пилинг</a><a href="#">Аппаратная косметология (2 аппарата)</a><a href="#">Аппаратная косметология (1 аппарат)</a><a href="#">Индивидуальные консультации для работающих косметологов</a></div>
+                                 </div>
+                                 <div class="modal-catalog__item">
+                                    <div class="modal-catalog__head"><a class="modal-catalog__title" href="#"><span>Массаж</span></a><a class="modal-catalog__subtitle" href="#"><span>Базовые курсы</span></a></div>
+                                    <div class="modal-catalog__subheadings"><a href="#">Массажист-PRO</a><a href="#">Массажист-ELITE</a></div>
+                                    <div class="modal-catalog__head"><a class="modal-catalog__subtitle" href="#"><span>Повышение квалификации</span></a></div>
+                                    <div class="modal-catalog__subheadings"><a href="#">Кинезиотейпирование</a><a href="#">Мезодемальные техники головы, лица, шеи и верхних конечностей</a><a href="#">Мезотерапия по телу</a><a href="#">Женский массаж</a><a href="#">Висцеральный массаж</a><a href="#">Миофасциральный релиз на диафрагмах</a><a href="#">Параостеопатические техники</a><a href="#">Миопластический массаж</a><a href="#">Коммерческий массаж</a><a href="#">Коррекция фигуры</a><a href="#">Мягкие мануальные техники</a><a href="#">Су-джок</a></div>
+                                    <div class="modal-catalog__head"><a class="modal-catalog__subtitle" href="#"><span>Курсы детского массажа</span></a></div>
+                                    <div class="modal-catalog__subheadings"><a href="#">Детский массаж</a><a href="#">Грудничковый (от 0 до года)</a><a href="#">Логопедический массаж</a><a href="#">Массаж при нарушениях опорно-двигательного аппарата и ДЦП</a></div>
+                                 </div>
+                                 <div class="modal-catalog__item">
+                                    <div class="modal-catalog__head"><a class="modal-catalog__title" href="#"><span>Маникюр и педикюр</span></a></div>
+                                    <div class="modal-catalog__subheadings"><a href="#">Профессиональный маникюр</a><a href="#">Педикюр классический и аппаратный</a><a href="#">Укрепление ногтей био-гелем</a><a href="#">Работа с гель-лаком</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="catalog-double__right">
+                     <div class="search-modal search-modal__left">
+                        <div class="search-modal__wrapper" data-simplebar="init">
+                           <div class="simplebar-track vertical" style="visibility: hidden;">
+                              <div class="simplebar-scrollbar"></div>
+                           </div>
+                           <div class="simplebar-track horizontal" style="visibility: hidden;">
+                              <div class="simplebar-scrollbar"></div>
+                           </div>
+                           <div class="simplebar-scroll-content" style="padding-right: 17px; margin-bottom: -34px;">
+                              <div class="simplebar-content simplebar-content__right" style="padding-bottom: 17px">
+                                 <div class="search-modal__item">
+                                    <h3>Подбор программы</h3>
+                                    <p>Оставьте контактные данные, и наши специалисты подберут для вас наиболее выгодный вариант обучения.</p>
+                                    <form data-parsley-validate="" novalidate="">
+                                       <label class="txt-input"><span class="txt-input__wrap"><input class="txt-input__field" type="text"/><span class="placeholder">Имя*</span><a class="input-clear" href="#"></a></span></label><label class="txt-input"><span class="txt-input__wrap"><input class="txt-input__field phone" type="text" id="phone" data-parsley-required="true" data-parsley-required-message="Введите номер телефона" data-parsley-trigger="change"/><span class="placeholder">Телефон*</span><a class="input-clear" href="#"></a></span></label><a class="button_green button_green_2" href="#">Заказать подбор</a>
+                                       <div class="txt-input__checkbox"><label class="cb-input cb-input__inverse"><input class="cb-input__checkbox" type="checkbox" data-parsley-checkmin="1" required="" checked="" name="ch-o" data-parsley-required-message="" data-parsley-multiple="ch-o"/><span class="cb-input__check"></span><span class="cb-input__label">Я даю свое
+                                          <a data-fancybox="" data-src="#policy" href="javascript:;">согласие на обработку персональных данных</a></span></label>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="search-modal search-modal__right">
+                        <div class="image-branch image-branch_12"></div>
+                        <div class="search-modal__wrapper">
+                           <div class="simplebar-content simplebar-content__right">
+                              <div class="phone_wrapper">
+                                 <div class="phone_main"><a class="phone_link" href="tel:+73912343440">+7 (333) 333-33-33</a></div>
+                                 <div class="phone_second"><a class="phone_link" href="tel:+73912343443">333-33-33</a><a class="phone_link" href="tel:+73912343444">333-33-33</a></div>
+                                 <a class="link_btn phone_btn">Заказать звонок</a>
+                              </div>
+                              <div class="address_wrapper">
+                                 <div class="address">ул. Пушкина, 49</div>
+                                 <div class="address">ул. Карла Маркса, 75</div>
+                                 <div class="address_location">
+                                    <div class="location"><i class="icon-location"></i><span>Москва</span></div>
+                                    <a class="link_btn link" href="#">На карте</a>
+                                 </div>
+                              </div>
+                              <div class="info-organization"><a href="#">Сведения об образовательной организации</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="menuleft">
+         <div class="catalog-line--left">
+            <div class="catalog-line--left__link" id="menuleft">
+               <div class="catalog-line--left__wrapper catalog-line--left__wrapper__1"><img src="img/logo.svg" alt="logo" title="logo"/></div>
+               <a class="js-catalog-open catalog-line--left__wrapper catalog-line--left__wrapper__2" data-fancybox="" data-src="#catalog-modal" href="javascript:;"><span class="catalog-line--left__text catalog-line--left__text__white">Обучение</span></a><a class="js-catalog-open catalog-line--left__wrapper catalog-line--left__wrapper__3" data-fancybox="" data-src="#catalog-modal" href="javascript:;"><span class="catalog-line--left__text catalog-line--left__text__grey">Подбор программы</span></a>
+               <a class="js-catalog-open catalog-line--left__wrapper catalog-line--left__wrapper__4" data-fancybox="" data-src="#catalog-modal" href="javascript:;">
+                  <div id="needtohide">
+                     <svg class="icon-burger catalog-line--left__svg" xmlns="http://www.w3.org/2000/svg" width="38" height="27" viewBox="0 0 38 27">
+                        <path fill="#8B572A" fill-rule="nonzero" d="M37.5 22.5v4H.5v-4h37zm0-11v4H.5v-4h37zm0-11v4H.5v-4h37z"></path>
+                     </svg>
+                  </div>
+               </a>
+               <div class="catalog-line--left__wrapper catalog-line--left__wrapper__5">
+                  <a class="catalog-line--left__icon catalog-line--left__icon__vk" href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="15" viewBox="0 0 27 15">
+                        <path fill="#BDBDBD" fill-rule="nonzero" d="M25.94.659h-4.38c-.365 0-.7.196-.872.51 0 0-1.748 3.152-2.31 4.213-1.51 2.855-2.487 1.959-2.487.634v-4.57c0-.794-.658-1.439-1.47-1.439h-3.295a2.661 2.661 0 0 0-2.331 1.06s1.673-.265 1.673 1.941c0 .548.028 2.122.055 3.442a.95.95 0 0 1-.614.908.985.985 0 0 1-1.081-.25A27.912 27.912 0 0 1 5.5 1.184a.924.924 0 0 0-.84-.525H.682a.68.68 0 0 0-.559.282.65.65 0 0 0-.08.61C1.252 4.799 6.458 15 12.402 15h2.5a.978.978 0 0 0 .989-.968v-1.479c0-.379.23-.722.585-.872a.987.987 0 0 1 1.051.18l2.994 2.754c.269.247.624.385.993.385h3.932c1.896 0 1.896-1.288.862-2.285-.727-.702-3.353-3.412-3.353-3.412a1.307 1.307 0 0 1-.104-1.725 1257.08 1257.08 0 0 0 2.825-3.65c.805-1.049 2.261-3.269.265-3.269z"></path>
+                     </svg>
+                  </a>
+                  <a class="catalog-line--left__icon catalog-line--left__icon__inst" href="#">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                        <path fill="#BDBDBD" fill-rule="nonzero" d="M15.582 0H6.416A6.424 6.424 0 0 0 0 6.418v9.166A6.424 6.424 0 0 0 6.418 22h9.166A6.424 6.424 0 0 0 22 15.582V6.416A6.424 6.424 0 0 0 15.582 0zM11 16.5A5.506 5.506 0 0 1 5.5 11c0-3.033 2.467-5.5 5.5-5.5s5.5 2.467 5.5 5.5-2.467 5.5-5.5 5.5zm6.417-11a.917.917 0 1 1 0-1.834.917.917 0 0 1 0 1.834zM11 14.667a3.667 3.667 0 1 1 0-7.334 3.667 3.667 0 0 1 0 7.334z"></path>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="content">
+         <section class="section_first">
+            <div class="video-bg"></div>
+            <div id="video">
+               <video preload="auto" autoplay="autoplay" muted="muted" loop="loop">
+                  <source src="video/video.mp4" type="video/mp4"/>
+               </video>
+            </div>
+            <div class="content_wrapper">
+               <div class="first_wrapper first_wrapper_main">
+                  <div class="first_header">
+                     <div class="contact_wrapper">
+                        <div class="phone_wrapper">
+                           <div class="phone_main"><a class="phone_link" href="tel:+73912343440">+7 (333) 333-33-33</a></div>
+                           <div class="phone_second"><a class="phone_link" href="tel:+73912343443">333-33-33</a><a class="phone_link" href="tel:+73912343444">333-33-33</a></div>
+                           <a class="link_btn phone_btn">Заказать звонок</a>
+                        </div>
+                     </div>
+                     <div class="address_wrapper">
+                        <div class="address">ул. Пушкина, 49</div>
+                        <div class="address">ул. Карла Маркса, 75</div>
+                        <div class="address_location">
+                           <div class="location"><i class="icon-location"></i><span>Москва</span></div>
+                           <a class="link link_btn" href="#">На карте</a>
+                        </div>
+                     </div>
+                     <div class="info-organization"><a href="#">Сведения об образовательной организации</a></div>
+                  </div>
+                  <h1 class="first_title">Подготовка специалистов для индустрии красоты</h1>
+                  <h6 class="first_subtitle">Обучись профессии с нуля или повысь свою квалификацию на краткосрочных профессиональных курсах красоты</h6>
+               </div>
+            </div>
+         </section>
+         <div class="section_notation">
+            <div class="wrapper">
+               <div class="notation_wrapper notation_main">
+                  <div class="notation_img"><img src="img/notation.png" alt="" title=""/></div>
+                  <div class="notation_block">
+                     <div class="notation_text">Все курсы включают: теорию, практику на моделях, бизнес советы и бесплатные материалы. Выберите интересующее направление</div>
+                     <div class="notation_tail"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_directions">
+            <div class="wrapper">
+               <div class="directions_row directions_row_1">
+                  <div class="directions_block">
+                     <div class="directions_img" style="background-image: url('img/111.png')"></div>
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Косметология</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>15 курсов</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+                  <div class="directions_block">
+                     <div class="directions_img" style="background-image: url('img/222.png')"></div>
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Массаж</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>9 курсов</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="directions_row directions_row_2">
+                  <div class="directions_block">
+                     <div class="directions_img"><img src="img/333.png" alt="" title=""/></div>
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Перманентный макияж</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+                  <div class="directions_block">
+                     <div class="directions_img"><img src="img/444.png" alt="" title=""/></div>
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Художественная татуировка</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+                  <div class="directions_block">
+                     <div class="directions_img"><img src="img/555.png" alt="" title=""/></div>
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Микроблейдинг</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="directions_row directions_row_3">
+                  <div class="directions_block">
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Медицинские курсы</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+                  <div class="directions_block">
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Гирудотерапия</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+                  <div class="directions_block">
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Маникюр и педикюр</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+                  <div class="directions_block">
+                     <div class="directions_content">
+                        <a class="directions_title" href="#">Дезинфекция</a>
+                        <div class="directions_text">Курсы помогут освоить все виды классического массажа, а также приобрести навыки лечебного, аппаратного и косметического массажа.</div>
+                        <a class="button button_green button_green_3" href="#"><span>3 курса</span><i class="icon-shape"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <section class="section_schedule">
+            <div class="image-branch image-branch_1"></div>
+            <div class="wrapper">
+               <h1>Ближайшие даты</h1>
+               <p>Ознакомиться с датами начала всех курсов, семинаров и выездных мероприятий вы можете в разделе
+                  <a href="#">Расписание</a>
+               </p>
+               <div class="schedule">
+                  <div class="schedule_block">
+                     <div class="schedule_left">
+                        <div class="schedule_date">
+                           <div class="schedule_day">20</div>
+                           <div class="schedule_month">июля</div>
+                        </div>
+                     </div>
+                     <div class="schedule_center">
+                        <a class="schedule_title" href="">Перманентный макияж</a>
+                        <div class="notices">
+                           <div class="notice notice_pink">Пушкина, 49</div>
+                           <div class="notice notice_blue">Новинка</div>
+                           <div class="notice notice_brawn">Выездное мероприятие</div>
+                        </div>
+                        <div class="informations">
+                           <div class="information"><span class="title">Форма обучения:</span><span class="text">дистанционно</span></div>
+                           <div class="information"><span class="title">Продолжительность обучения:</span><span class="text">2 месяца</span></div>
+                           <div class="information"><span class="title">Мед.образование:</span><span class="text">необязательно</span></div>
+                           <div class="information"><span class="title">Выдаем:</span><span class="text">2 сертификата</span></div>
+                        </div>
+                     </div>
+                     <div class="schedule_right">
+                        <div class="schedule_header">
+                           <div class="schedule_discount">1500
+                              <span>руб.</span>
+                           </div>
+                           <div class="schedule_price schedule_price_crossed-out">2500
+                              <span>руб.</span>
+                           </div>
+                        </div>
+                        <div class="schedule_footer">
+                           <p>стоимость действительна при единовременной оплате до 30.08</p>
+                           <a class="button button_green button_green_4" href="#"><i class="icon-shape"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="schedule_block">
+                     <div class="schedule_left">
+                        <div class="schedule_date">
+                           <div class="schedule_day">10</div>
+                           <div class="schedule_month">марта</div>
+                        </div>
+                     </div>
+                     <div class="schedule_center">
+                        <a class="schedule_title" href="">Массаж при нарушениях и ДЦП</a>
+                        <div class="notices">
+                           <div class="notice notice_orange">Карла Маркса, 75</div>
+                           <div class="notice notice_yellow">Хит</div>
+                        </div>
+                        <div class="informations">
+                           <div class="information"><span class="title">Форма обучения:</span><span class="text">дистанционно</span></div>
+                           <div class="information"><span class="title">Продолжительность обучения:</span><span class="text">2 месяца</span></div>
+                           <div class="information"><span class="title">Мед.образование:</span><span class="text">необязательно</span></div>
+                           <div class="information"><span class="title">Выдаем:</span><span class="text">2 сертификата</span></div>
+                        </div>
+                     </div>
+                     <div class="schedule_right">
+                        <div class="schedule_header">
+                           <div class="schedule_discount"></div>
+                           <div class="schedule_price">2500
+                              <span>руб.</span>
+                           </div>
+                        </div>
+                        <div class="schedule_footer"><a class="button button_green button_green_4" href="#"><i class="icon-shape"></i></a></div>
+                     </div>
+                  </div>
+                  <div class="schedule_block">
+                     <div class="schedule_left">
+                        <div class="schedule_date">
+                           <div class="schedule_day">25</div>
+                           <div class="schedule_month">сентября</div>
+                        </div>
+                     </div>
+                     <div class="schedule_center">
+                        <a class="schedule_title" href="">Инъекционные методики в косметологии</a>
+                        <div class="notices">
+                           <div class="notice notice_orange">Выездное мероприятие</div>
+                           <div class="notice notice_yellow">Карла Маркса, 75</div>
+                        </div>
+                        <div class="informations">
+                           <div class="information schedule_information"><span class="title">Форма обучения:</span><span class="text">дистанционно</span></div>
+                           <div class="information schedule_information"><span class="title">Продолжительность обучения:</span><span class="text">2 месяца</span></div>
+                           <div class="information schedule_information"><span class="title">Мед.образование:</span><span class="text">необязательно</span></div>
+                           <div class="information schedule_information"><span class="title">Выдаем:</span><span class="text">2 сертификата</span></div>
+                        </div>
+                     </div>
+                     <div class="schedule_right">
+                        <div class="schedule_header">
+                           <div class="schedule_discount"></div>
+                           <div class="schedule_price">2500
+                              <span>руб.</span>
+                           </div>
+                        </div>
+                        <div class="schedule_footer"><a class="button button_green button_green_4" href="#"><i class="icon-shape"></i></a></div>
+                     </div>
+                  </div>
+                  <button class="button button_spoiler schedule_button"><span>Смотреть все ближайшие даты</span></button>
+               </div>
+            </div>
+         </section>
+         <section class="section_credit">
+            <div class="wrapper">
+               <div class="credit_block">
+                  <div class="credit_logo"><img src="img/raiffeisen.png" alt="" title=""/></div>
+                  <div class="credit_center">
+                     <h2>Не откладывайте обучение – заплатите за него по частям</h2>
+                     <p>В нашем учебном центре доступна возможность обучения в кредит на выгодных условиях</p>
+                  </div>
+                  <div class="credit_button"><button class="button button_green button_green_2">Узнать подробнее об условиях</button></div>
+               </div>
+            </div>
+         </section>
+         <section class="section_cards">
+            <div class="wrapper">
+               <div class="cards_title">
+                  <h2>Преподаватели – практикующие специалисты с огромным опытом</h2>
+               </div>
+               <div class="cards">
+                  <div class="owl-carousel owl-carousel-cards owl-them">
+                     <div class="cards_block cards_block_column">
+                        <div class="cards_img" style="background-image: url('img/teacher-1.png')"></div>
+                        <a class="cards_name" href="">Гаевская Елена Владимировна</a>
+                        <div class="notices">
+                           <div class="notice notice_brawn">Практикующий косметолог</div>
+                           <div class="notice notice_orange">Декабристов, 49</div>
+                        </div>
+                        <p class="cards_text">Преподаватель курса «Косметолог (базовый курс)»</p>
+                     </div>
+                     <div class="cards_block cards_block_column">
+                        <div class="cards_img" style="background-image: url('img/teacher-2.png')"></div>
+                        <a class="cards_name" href="">Пугачева Елена Владимировна</a>
+                        <div class="notices">
+                           <div class="notice notice_brawn">Врач высшей категории</div>
+                           <div class="notice notice_brawn">Врач физиотерапевт</div>
+                           <div class="notice notice_orange">Карла Маркса, 75</div>
+                        </div>
+                        <p class="cards_text">Преподаватель курсов «Массаж (экспресс курс)», «Массаж (базовый курс)», «Глубокий массаж лица», «Коррекция фигуры»</p>
+                     </div>
+                     <div class="cards_block cards_block_column">
+                        <div class="cards_img" style="background-image: url('img/teacher-3.png')"></div>
+                        <a class="cards_name" href="">Пахмутова Ольга Юрьевна</a>
+                        <div class="notices">
+                           <div class="notice notice_pink">Пушкина, 49</div>
+                        </div>
+                        <p class="cards_text">Преподаватель курса «Астрология»</p>
+                     </div>
+                     <div class="cards_block cards_block_column">
+                        <div class="cards_img" style="background-image: url('img/teacher-3.png')"></div>
+                        <a class="cards_name" href="">Пахмутова Ольга Юрьевна</a>
+                        <div class="notices">
+                           <div class="notice notice_pink">Пушкина, 49</div>
+                        </div>
+                        <p class="cards_text">Преподаватель курса «Астрология»</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section_stocks">
+            <div class="image-branch image-branch_2"></div>
+            <div class="wrapper">
+               <div class="stocks_main-header">
+                  <div class="stocks_main-title">Акции</div>
+                  <div class="stocks_main-left">
+                     <h3>Не упусти шанс обучиться по лучшей цене</h3>
+                     <p>Стоимость курсов действительна при единовременной оплате</p>
+                  </div>
+               </div>
+               <div class="stocks_wrapper">
+                  <div class="stocks_block">
+                     <div class="stocks_img" style="background-image: url('img/stocks1.png')"></div>
+                     <div class="stocks_content">
+                        <div class="stocks_header">
+                           <div class="stocks_title-wrapper">
+                              <a class="stocks_title" href="#">Массаж при нарушениях опорно-двигательного аппарата и ДЦП</a>
+                              <div class="notice notice_title notice_red">Акция</div>
+                              <div class="notice notice_title notice_blue">Новинка</div>
+                           </div>
+                           <div class="notices">
+                              <div class="notice notice_pink">Пушкина, 49</div>
+                           </div>
+                        </div>
+                        <div class="stocks_footer">
+                           <div class="stocks_footer-left">
+                              <div class="stocks_price stocks_price_discount">40000
+                                 <span>руб.</span>
+                              </div>
+                              <div class="stocks_price stocks_price_red">36000
+                                 <span>руб.</span>
+                              </div>
+                              <p>стоимость действительна при единовременной оплате до 30.08</p>
+                           </div>
+                           <div class="stocks_center">
+                              <div class="informations">
+                                 <div class="information"><span class="title">Форма обучения:</span><span class="text">дистанционно</span></div>
+                                 <div class="information"><span class="title">Мед.образование:</span><span class="text">необязательно</span></div>
+                                 <div class="information"><span class="title">Продолжительность:</span><span class="text">2 месяца</span></div>
+                                 <div class="information"><span class="title">Выдаем:</span><span class="text">2 сертификата</span></div>
+                              </div>
+                           </div>
+                           <div class="stocks_right"><a class="button button_green button_green_4" href="#"><i class="icon-shape"></i></a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="stocks_block">
+                     <div class="stocks_img" style="background-image: url('img/stocks2.png')"></div>
+                     <div class="stocks_content">
+                        <div class="stocks_header">
+                           <a class="stocks_title" href="#">Мастер перманентного макияжа<span class="notice notice_red">Акция</span></a>
+                           <div class="notices">
+                              <div class="notice notice_pink">Пушкина, 49</div>
+                              <div class="notice notice_orange">Карла Маркса, 75</div>
+                           </div>
+                        </div>
+                        <div class="stocks_footer">
+                           <div class="stocks_footer-left">
+                              <div class="stocks_price stocks_price_discount">40000
+                                 <span>руб.</span>
+                              </div>
+                              <div class="stocks_price stocks_price_red">36000
+                                 <span>руб.</span>
+                              </div>
+                              <p>стоимость действительна при единовременной оплате до 30.08</p>
+                           </div>
+                           <div class="stocks_center">
+                              <div class="informations">
+                                 <div class="information"><span class="title">Форма обучения:</span><span class="text">дистанционно</span></div>
+                                 <div class="information"><span class="title">Мед.образование:</span><span class="text">необязательно</span></div>
+                                 <div class="information"><span class="title">Продолжительность:</span><span class="text">2 месяца</span></div>
+                                 <div class="information"><span class="title">Выдаем:</span><span class="text">2 сертификата</span></div>
+                              </div>
+                           </div>
+                           <div class="stocks_right"><a class="button button_green button_green_4" href="#"><i class="icon-shape"></i></a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="section_success">
+            <div class="wrapper">
+               <div class="success_header">
+                  <div class="title-1">Нашими учениками становятся люди из разных городов</div>
+                  <div class="text">Мы&nbspпомогаем&nbspлюдям&nbspизменить жизнь&nbspк&nbspлучшему и&nbspделаем&nbspэто&nbspс&nbspлюбовью</div>
+               </div>
+               <div class="success_row">
+                  <div class="success_block success_block_1">
+                     <div class="success_left">
+                        <div class="success_photo"><img src="img/photo1.png" alt="" title=""/></div>
+                     </div>
+                     <div class="success_right">
+                        <div class="success_right-header">
+                           <h3 class="success_title">История успеха Ксении</h3>
+                           <p class="success_location">Красноярск</p>
+                        </div>
+                        <p class="success_text">Если рассмотреть все принятые в последнее время нормативные акты, то видно, что акцепт начинает объект права. В связи с этим нужно подчеркнуть, что социально-психологический фактор начинает резкий сангвиник. Сновидение, несмотря на внешние воздействия, запрещает объект права. Согласно теории "вчувствования", разработанной Теодором Липпсом, импульс неустойчив. Горизонт ожидания психологически иллюстрирует сервитут.</p>
+                     </div>
+                  </div>
+                  <div class="success_block success_block_2">
+                     <div class="success_left">
+                        <div class="success_photo"><img src="img/photo2.png" alt="" title=""/></div>
+                     </div>
+                     <div class="success_right">
+                        <div class="success_right-header">
+                           <h3 class="success_title">История успеха Ирины</h3>
+                           <p class="success_location">Назарово</p>
+                        </div>
+                        <p class="success_text">Феномен толпы практически продолжает райдер. Флюгель-горн имеет элемент политического процесса, потому что современная музыка не запоминается. Контрапункт контрастных фактур интуитивно понятен. Н.А.Бердяев отмечает, что попса вызывает структурный субъект политического процесса, хотя на первый взгляд, российские власти тут ни при чем.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="success_footer"><button class="button button_spoiler success_button"><span>Показать еще</span></button></div>
+            </div>
+         </section>
+      </div>
+      <footer>
+         <div class="section_navigation">
+            <div class="wrapper">
+               <div class="navigation_row">
+                  <div class="navigation_block">
+                     <div class="navigation_title">Обучение</div>
+                     <div class="navigation_links"><a href="#">Косметология</a><a href="#">Массаж</a><a href="#">Микроблейдинг</a><a href="#">Дезинфекция</a><a href="#">Перманентный макияж</a><a href="#">Маникюр и педикюр</a><a href="#">Медицинские курсы</a><a href="#">Гирудотерапия</a><a href="#">Художественная татуировка</a></div>
+                  </div>
+                  <div class="navigation_block">
+                     <div class="navigation_title">Учебный центр</div>
+                     <div class="navigation_links"><a href="#">О центре</a><a href="#">Сведения об обр. организации</a><a href="#">Вакансии</a><a href="#">Оплата</a><a href="#">Расписание</a><a href="#">Преподаватели</a><a href="#">Блог</a><a href="#">Скидки</a><a href="#">Магазин</a><a href="#">Дистанционное обучение</a><a href="#">Контакты</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="section_contacts">
+            <div class="wrapper">
+               <div class="contacts_row">
+                  <div class="contacts contacts_left">
+                     <div class="contacts_center_wrapper">
+                        <div class="contacts_center-left">
+                           <i class="icon-phone"></i>
+                           <div class="phone_wrapper"><a class="phone" href="tel:+733333333">+7 (333) 333 33 33</a><a class="phone" href="tel:+733333333">+7 (333) 333 33 33</a><a class="phone" href="tel:+73912343444">+7 (391) 234 34 44</a></div>
+                        </div>
+                        <div class="contacts_center-right">
+                           <div class="contacts_address"><i class="icon-location"></i><span>г. Красноярск,<br/>ул. Пушкина, 49 и ул. Карла Маркса, 75</span></div>
+                           <div class="contacts_email"><i class="icon-mail"></i><a href="mailto:mail@mailcenter.ru">mail@mailcenter.ru</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="contacts contacts_right">
+                     <div class="socio">
+                        <div class="contacts_title">Следите за новостями в соцсетях:</div>
+                        <div class="socio_icons"><a class="socio_icon socio_icon_inst" href="#" target="_blank"></a><a class="socio_icon socio_icon_vk" href="#" target="_blank"></a></div>
+                     </div>
+                     <div class="card">
+                        <div class="contacts_title">Принимаем к оплате:</div>
+                        <div class="card_icons"><i class="card_icon card_icon_mir"></i><i class="card_icon card_icon_visa"></i><i class="card_icon card_icon_mastercard"></i></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer">
+            <div class="wrapper">
+               <div class="footer_row">
+                  <div class="footer_left">
+                     <a class="button_up" id="up" href="#logo"></a>
+                     <div class="footer_block copyright">2020 © Гармония. Учебный центр</div>
+                     <a class="footer_block politics" href="#" target="_blank">Политика конфиденциальности</a>
+                  </div>
+                  <div class="footer_right">
+                     <a class="footer_block consent" href="#" target="_blank">Согласие на обработку персональных данных</a>
+                     <a class="footer_block production" href="#" target="_blank">
+                        <div class="production_text">Создание сайта</div>
+                        <div class="production_logo"><img src="img/sol.png" alt="" title=""/></div>
+                     </a>
+                  </div>
+               </div>
+               <a class="footer_media production" href="#" target="_blank">
+                  <div class="production_text">Создание сайта</div>
+                  <div class="production_logo"><img src="img/sol.png" alt="" title=""/></div>
+               </a>
+            </div>
+         </div>
+      </footer>
+      <script src="js/jquery.min.js"></script><script src="js/menuleft/libs.min.js"></script><script src="js/menuleft/common.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.validate.js"></script><script src="js/main.js"></script>
+   </body>
+</html>
